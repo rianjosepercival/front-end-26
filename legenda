@@ -1,0 +1,578 @@
+<section>
+  <h2>Objetivo da atividade</h2>
+
+  <p>
+    Esta página apresenta um vídeo com recursos básicos de
+    acessibilidade. O vídeo possui controles de reprodução e
+    legendas em português utilizando a tag
+    <strong>&lt;track&gt;</strong>.
+  </p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade Prática — Vídeo com Legendas</title>
+
+  <style>
+    * {<section>
+  <h2>Objetivo da atividade</h2>
+
+  <p>
+    Esta página apresenta um vídeo com recursos básicos de
+    acessibilidade. O vídeo possui controles de reprodução e
+    legendas em português utilizando a tag
+    <strong>&lt;track&gt;</strong>.
+  </p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade Prática — Vídeo com Legendas</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1f4e79;
+      color: white;
+      padding: 28px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.05rem;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px 40px;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 24px;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      color: #1f4e79;
+      margin-top: 0;
+    }
+
+    .aviso {
+      background: #fff8db;
+      border-left: 5px solid #e0a800;
+      padding: 14px 16px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    ol {
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    code {
+      background: #eef2f7;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    video {
+      width: 100%;
+      max-width: 760px;
+      border-radius: 10px;
+      background: black;
+    }
+
+    .checklist {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .checklist li {
+      background: #f8fafc;
+      padding: 10px 12px;
+      border: 1px solid #dbe3ea;
+      border-radius: 6px;
+      margin-bottom: 8px;
+    }
+
+    .checklist li::before {
+      content: "☐ ";
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      color: #6b7280;
+      font-size: 0.9rem;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Atividade Prática — Vídeo com Legendas</h1>
+    <p>Aplicação das tags HTML &lt;video&gt; e &lt;track&gt;</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Objetivo da atividade</h2>
+      <p>
+        Nesta atividade, você irá inserir um vídeo em uma página HTML,
+        configurar seus controles e adicionar uma faixa de legenda utilizando
+        um arquivo no formato <code>.vtt</code>.
+      </p>
+
+      <div class="aviso">
+        <strong>Importante:</strong> mantenha os arquivos
+        <code>index.html</code>, <code>video.mp4</code> e
+        <code>legendas.vtt</code> na mesma pasta do projeto.
+      </div>
+    </section>
+
+    <section>
+      <h2>7. Passo a Passo da Atividade Prática</h2>
+
+      <ol>
+        <li>Abra o projeto disponibilizado pelo professor.</li>
+        <li>Localize ou crie a página <code>index.html</code>.</li>
+        <li>Insira um título explicando o conteúdo do vídeo.</li>
+        <li>Adicione o elemento <code>&lt;video&gt;</code>.</li>
+        <li>Configure os controles do vídeo utilizando o atributo <code>controls</code>.</li>
+        <li>Adicione o arquivo de vídeo ao projeto.</li>
+        <li>Crie ou utilize um arquivo de legenda <code>.vtt</code>.</li>
+        <li>Adicione a tag <code>&lt;track&gt;</code> dentro do vídeo.</li>
+        <li>Configure o idioma da legenda utilizando <code>srclang="pt-BR"</code>.</li>
+        <li>Defina uma identificação clara para a faixa com o atributo <code>label</code>.</li>
+        <li>Abra a página no navegador.</li>
+        <li>Reproduza o vídeo.</li>
+        <li>Ative as legendas no controle do vídeo.</li>
+        <li>Confira se o texto e o áudio estão sincronizados.</li>
+        <li>Verifique se os controles podem ser utilizados normalmente.</li>
+        <li>Corrija eventuais problemas encontrados.</li>
+        <li>Faça uma captura de tela da página funcionando.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Exemplo de vídeo com legenda</h2>
+
+      <p>
+        O código abaixo já está configurado para procurar os arquivos
+        <code>video.mp4</code> e <code>legendas.vtt</code>.
+      </p>
+
+      <div class="video-container">
+        <video controls>
+          <source src="video.mp4" type="video/mp4">
+
+          <track
+            src="legendas.vtt"
+            kind="subtitles"
+            srclang="pt-BR"
+            label="Português"
+            default
+          >
+
+          Seu navegador não suporta a reprodução de vídeos em HTML5.
+        </video>
+      </div>
+    </section>
+
+    <section>
+      <h2>Checklist antes de entregar</h2>
+
+      <ul class="checklist">
+        <li>O vídeo aparece corretamente na página.</li>
+        <li>O botão de reproduzir funciona.</li>
+        <li>Os controles do vídeo estão disponíveis.</li>
+        <li>A opção de legenda aparece no player.</li>
+        <li>A legenda está em português.</li>
+        <li>O texto da legenda está sincronizado com o áudio.</li>
+        <li>A página foi testada no navegador.</li>
+        <li>A captura de tela da página funcionando foi realizada.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    Atividade de Desenvolvimento Web — Acessibilidade e multimídia em HTML
+  </footer>
+
+</body>
+</html>
+  <div class="aviso">
+    <strong>Importante:</strong>
+    as legendas ajudam pessoas com deficiência auditiva e também
+    facilitam a compreensão do conteúdo em diferentes situações.
+  </div>
+</section>
+
+<section>
+  <h2>Vídeo com legendas</h2>
+
+  <p>
+    Utilize os controles abaixo para reproduzir o vídeo e ativar
+    as legendas em português.
+  </p>
+
+  <div class="video-container">
+
+    <video controls>
+
+      <source src="video.mp4" type="video/mp4">
+
+      <track
+        src="legendas.vtt"
+        kind="subtitles"
+        srclang="pt-BR"
+        label="Português"
+        default
+      >
+
+      Seu navegador não suporta vídeos HTML5.
+
+    </video>
+
+  </div>
+</section>
+
+<section>
+  <h2>Sobre a acessibilidade</h2>
+
+  <p>
+    A utilização de legendas é um importante recurso de
+    acessibilidade em conteúdos multimídia. Elas permitem que
+    pessoas surdas ou com dificuldade de audição acompanhem
+    as informações apresentadas no vídeo.
+  </p>
+
+  <p>
+    Nesta atividade foram utilizados os elementos
+    <strong>&lt;video&gt;</strong> e
+    <strong>&lt;track&gt;</strong> do HTML.
+  </p>
+</section>
+
+<section>
+  <h2>Checklist</h2>
+
+  <ul class="checklist">
+    <li>Vídeo funcionando</li>
+    <li>Controles de reprodução disponíveis</li>
+    <li>Legenda em português configurada</li>
+    <li>Arquivo WebVTT utilizado</li>
+    <li>Legenda sincronizada com o vídeo</li>
+    <li>Página testada no navegador</li>
+  </ul>
+</section>
+
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1f4e79;
+      color: white;
+      padding: 28px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.05rem;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px 40px;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 24px;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      color: #1f4e79;
+      margin-top: 0;
+    }
+
+    .aviso {
+      background: #fff8db;
+      border-left: 5px solid #e0a800;
+      padding: 14px 16px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    ol {
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    code {
+      background: #eef2f7;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    video {
+      width: 100%;
+      max-width: 760px;
+      border-radius: 10px;
+      background: black;
+    }
+
+    .checklist {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .checklist li {
+      background: #f8fafc;
+      padding: 10px 12px;
+      border: 1px solid #dbe3ea;
+      border-radius: 6px;
+      margin-bottom: 8px;
+    }
+
+    .checklist li::before {
+      content: "☐ ";
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      color: #6b7280;
+      font-size: 0.9rem;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Atividade Prática — Vídeo com Legendas</h1>
+    <p>Aplicação das tags HTML &lt;video&gt; e &lt;track&gt;</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Objetivo da atividade</h2>
+      <p>
+        Nesta atividade, você irá inserir um vídeo em uma página HTML,
+        configurar seus controles e adicionar uma faixa de legenda utilizando
+        um arquivo no formato <code>.vtt</code>.
+      </p>
+
+      <div class="aviso">
+        <strong>Importante:</strong> mantenha os arquivos
+        <code>index.html</code>, <code>video.mp4</code> e
+        <code>legendas.vtt</code> na mesma pasta do projeto.
+      </div>
+    </section>
+
+    <section>
+      <h2>7. Passo a Passo da Atividade Prática</h2>
+
+      <ol>
+        <li>Abra o projeto disponibilizado pelo professor.</li>
+        <li>Localize ou crie a página <code>index.html</code>.</li>
+        <li>Insira um título explicando o conteúdo do vídeo.</li>
+        <li>Adicione o elemento <code>&lt;video&gt;</code>.</li>
+        <li>Configure os controles do vídeo utilizando o atributo <code>controls</code>.</li>
+        <li>Adicione o arquivo de vídeo ao projeto.</li>
+        <li>Crie ou utilize um arquivo de legenda <code>.vtt</code>.</li>
+        <li>Adicione a tag <code>&lt;track&gt;</code> dentro do vídeo.</li>
+        <li>Configure o idioma da legenda utilizando <code>srclang="pt-BR"</code>.</li>
+        <li>Defina uma identificação clara para a faixa com o atributo <code>label</code>.</li>
+        <li>Abra a página no navegador.</li>
+        <li>Reproduza o vídeo.</li>
+        <li>Ative as legendas no controle do vídeo.</li>
+        <li>Confira se o texto e o áudio estão sincronizados.</li>
+        <li>Verifique se os controles podem ser utilizados normalmente.</li>
+        <li>Corrija eventuais problemas encontrados.</li>
+        <li>Faça uma captura de tela da página funcionando.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Exemplo de vídeo com legenda</h2>
+
+      <p>
+        O código abaixo já está configurado para procurar os arquivos
+        <code>video.mp4</code> e <code>legendas.vtt</code>.
+      </p>
+
+      <div class="video-container">
+        <video controls>
+          <source src="video.mp4" type="video/mp4">
+
+          <track
+            src="legendas.vtt"
+            kind="subtitles"
+            srclang="pt-BR"
+            label="Português"
+            default
+          >
+
+          Seu navegador não suporta a reprodução de vídeos em HTML5.
+        </video>
+      </div>
+    </section>
+
+    <section>
+      <h2>Checklist antes de entregar</h2>
+
+      <ul class="checklist">
+        <li>O vídeo aparece corretamente na página.</li>
+        <li>O botão de reproduzir funciona.</li>
+        <li>Os controles do vídeo estão disponíveis.</li>
+        <li>A opção de legenda aparece no player.</li>
+        <li>A legenda está em português.</li>
+        <li>O texto da legenda está sincronizado com o áudio.</li>
+        <li>A página foi testada no navegador.</li>
+        <li>A captura de tela da página funcionando foi realizada.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    Atividade de Desenvolvimento Web — Acessibilidade e multimídia em HTML
+  </footer>
+
+</body>
+</html>
+  <div class="aviso">
+    <strong>Importante:</strong>
+    as legendas ajudam pessoas com deficiência auditiva e também
+    facilitam a compreensão do conteúdo em diferentes situações.
+  </div>
+</section>
+
+<section>
+  <h2>Vídeo com legendas</h2>
+
+  <p>
+    Utilize os controles abaixo para reproduzir o vídeo e ativar
+    as legendas em português.
+  </p>
+
+  <div class="video-container">
+
+    <video controls>
+
+      <source src="video.mp4" type="video/mp4">
+
+      <track
+        src="legendas.vtt"
+        kind="subtitles"
+        srclang="pt-BR"
+        label="Português"
+        default
+      >
+
+      Seu navegador não suporta vídeos HTML5.
+
+    </video>
+
+  </div>
+</section>
+
+<section>
+  <h2>Sobre a acessibilidade</h2>
+
+  <p>
+    A utilização de legendas é um importante recurso de
+    acessibilidade em conteúdos multimídia. Elas permitem que
+    pessoas surdas ou com dificuldade de audição acompanhem
+    as informações apresentadas no vídeo.
+  </p>
+
+  <p>
+    Nesta atividade foram utilizados os elementos
+    <strong>&lt;video&gt;</strong> e
+    <strong>&lt;track&gt;</strong> do HTML.
+  </p>
+</section>
+
+<section>
+  <h2>Checklist</h2>
+
+  <ul class="checklist">
+    <li>Vídeo funcionando</li>
+    <li>Controles de reprodução disponíveis</li>
+    <li>Legenda em português configurada</li>
+    <li>Arquivo WebVTT utilizado</li>
+    <li>Legenda sincronizada com o vídeo</li>
+    <li>Página testada no navegador</li>
+  </ul>
+</section>
